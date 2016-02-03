@@ -19,6 +19,13 @@ The board is populated with:
 - 2 x 10uF 0805 Caps
 
 
+### Pins
+I think you understand the marking on your own.
+The state pin should be connected to the GPIO0 of the esp8266 you want to program (to toggle GPIO0)
+
+
+
+
 ### Picture
 
 
