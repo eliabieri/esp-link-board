@@ -3432,7 +3432,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="SERIAL" gate="G$1" x="109.22" y="27.94" rot="R90"/>
 <instance part="SERRES" gate="G$1" x="121.92" y="27.94"/>
 <instance part="WIFIRES" gate="G$1" x="106.68" y="71.12" rot="R90"/>
-<instance part="WIFI" gate="G$1" x="106.68" y="55.88" rot="R180"/>
+<instance part="WIFI" gate="G$1" x="106.68" y="55.88"/>
 <instance part="GND4" gate="1" x="134.62" y="27.94" rot="R90"/>
 <instance part="SUPPLY3" gate="G$1" x="25.4" y="43.18" rot="R90"/>
 <instance part="GPIO15DOWN" gate="G$1" x="83.82" y="2.54" rot="R90"/>
@@ -3560,9 +3560,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="HEADER" gate="A" pin="2"/>
 <wire x1="58.42" y1="81.28" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="63.5" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="TXD"/>
-<wire x1="83.82" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3595,10 +3592,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="101.6" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="35.56" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
 <junction x="99.06" y="38.1"/>
-<pinref part="WIFI" gate="G$1" pin="A"/>
-<wire x1="106.68" y1="53.34" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="48.26" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="48.26" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="WIFI" gate="G$1" pin="C"/>
+<wire x1="106.68" y1="50.8" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3615,13 +3612,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="SERIAL" gate="G$1" pin="C"/>
 <pinref part="SERRES" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="WIFI" gate="G$1" pin="C"/>
-<pinref part="WIFIRES" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="60.96" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -3658,6 +3648,20 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <junction x="-43.18" y="73.66"/>
 <pinref part="INPUTCAP" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="73.66" x2="-43.18" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="TXD"/>
+<wire x1="83.82" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="WIFI" gate="G$1" pin="A"/>
+<pinref part="WIFIRES" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="66.04" x2="109.22" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="66.04" x2="106.68" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
