@@ -17,7 +17,7 @@ The board is populated with:
 - 2 LEDs (serial and wifi, more information here: https://github.com/jeelabs/esp-link#led-indicators)
 - 4 x 10K 0805 Resistor
 - 2 x 10uF 0805 Caps
-- 
+
 
 ### Picture
 
